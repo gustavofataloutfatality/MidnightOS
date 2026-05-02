@@ -17,7 +17,7 @@
 
 .ps2_ee
 
-.include "source/kernel/main.asm"
+.include "kernel/main.asm"
 
 .entry_point start
 
@@ -29,4 +29,3 @@ start:
 
     jal main
     nop
-    

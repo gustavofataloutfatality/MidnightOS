@@ -17,16 +17,11 @@
 
 .ps2_ee
 
-.include "source/kernel/main.asm"
+.export main
 
-.entry_point start
+main:
 
-.org 0x100000
+loop:
 
-start:
-
-    li $sp, 0x02000000
-
-    jal main
-    nop
+    j loop
     
